@@ -63,7 +63,7 @@ export default class App extends Component {
         });
       },
       (error) => this.setState({ error: error.message }),
-      {enableHighAccuracy: true, maximumAge: 1000, distanceFilter: 10 },
+      {enableHighAccuracy: true, maximumAge: 1000, distanceFilter: 50 },
     );
   }
   componentWillUnmount() {
